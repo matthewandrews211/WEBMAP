@@ -10,11 +10,34 @@
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
+
+        /* Overlay for credits/source */
+        #credits {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            font-size: 12px;
+            font-family: sans-serif;
+            border-radius: 4px;
+            z-index: 1;
+        }
+
+        #credits a {
+            color: #000;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
 <div id="map"></div>
+
+<!-- Credits overlay -->
+<div id="credits">
+    Matthew Andrews 2025 | Source: <a href="https://berkeleyheritage.com/berkeley_landmarks/landmarks1-100.html" target="_blank">Berkeley Landmarks</a>
+</div>
 
 <!-- Mapbox JS -->
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.js"></script>
