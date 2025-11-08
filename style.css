@@ -2,8 +2,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* clean, professional font */
-    background-color: #f8f8f8;      /* subtle background if map doesn’t cover fully */
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
 }
 
 /* ---------- Map Container ---------- */
@@ -12,20 +12,20 @@ body {
     top: 0;
     bottom: 0;
     width: 100%;
-    min-height: 400px; /* ensures visibility on small screens */
+    min-height: 400px;
 }
 
-/* ---------- Credits / Source Overlay ---------- */
+/* ---------- Credits / Source Overlay (Top-Right Corner) ---------- */
 #credits {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background: rgba(255, 255, 255, 0.85); /* slightly transparent */
-    padding: 5px 12px;
-    font-size: 12px;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.75); /* subtle transparency */
+    padding: 4px 10px;
+    font-size: 11px;
     color: #000;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.25); /* subtle shadow */
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -42,5 +42,10 @@ body {
 
 /* ---------- Optional Hover Effects for Interactive Elements ---------- */
 .mapboxgl-marker:hover {
+    cursor: pointer;
+}
+
+.mapboxgl-marker:hover {
     cursor: pointer; /* indicate clickable markers */
 }
+
